@@ -19,6 +19,11 @@ module.exports = {
           presets: ['@babel/preset-react', '@babel/preset-env'],
         }
       },
+      // 編譯css
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ],
+      },
     ],
   },
   mode: 'development',

@@ -1,7 +1,9 @@
 import React from 'react'
 
+import './App.css';
+
 const App = () => (
-  <div>Testfsfs</div>
+  <div class="test">Test</div>
 );
 
 export default App;
