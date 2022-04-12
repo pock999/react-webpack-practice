@@ -2,8 +2,13 @@ import React from 'react'
 
 import './App.css';
 
+import img from './img/react-img.png'
+
 const App = () => (
-  <div class="test">Test</div>
+  <>
+    <img src={img}/>
+    <div class="test">Test</div>
+  </>
 );
 
 export default App;

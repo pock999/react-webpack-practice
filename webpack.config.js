@@ -24,6 +24,12 @@ module.exports = {
         test: /\.css$/,
         use: [ 'style-loader', 'css-loader' ],
       },
+      // 圖片
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file-loader',
+        options: {},
+      },
     ],
   },
   mode: 'development',
