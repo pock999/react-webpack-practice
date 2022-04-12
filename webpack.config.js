@@ -1,5 +1,7 @@
 const path = require('path');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   // 進入點
   entry: './index.js',
@@ -20,7 +22,11 @@ module.exports = {
     ],
   },
   mode: 'development',
-
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'public/index.html'
+    })
+  ],
   devServer: {
     // contentBase
     static : {
