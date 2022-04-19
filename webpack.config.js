@@ -35,6 +35,9 @@ module.exports = {
   mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({
+      // 加上 onClick 才有效
+      name: "index.html",
+      inject: false,
       template: 'public/index.html'
     })
   ],
